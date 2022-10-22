@@ -1,5 +1,15 @@
-import 'package:rcis_ep_task_one_1/rcis_ep_task_one_1.dart' as rcis_ep_task_one_1;
+import 'dart:io';
+import 'dart:math';
 
-void main(List<String> arguments) {
-  print('Hello world: ${rcis_ep_task_one_1.calculate()}!');
-}
+void main() {
+ //zadanie 1 pr 1.2
+  List<int> f = [];
+
+  int a = 100;
+  for (int i = 0; i < 100; i++) {
+    int b = a - 3;
+    a = b;
+    f.add(b);
+  }
+  print('Массив: $f');
+} 
